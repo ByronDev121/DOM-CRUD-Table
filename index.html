@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+        CRUD with pure JavaScript and HTML for Neil Koopman
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <span id="headingOne"></span>
+                        <input type="text" id="fieldOne">
+                    </div>
+
+                    <div>
+                        <span id="headingTwo"></span>
+                        <!-- <label class="validation-error hide" id="fullNameValidationError">This field is
+                            required.</label> -->
+                        <input type="text" id="fieldTwo">
+                    </div>
+
+                    <div>
+                        <span id="headingThree"></span>
+                        <input type="text" id="fieldThree">
+                    </div>
+                    <div>
+                        <span id="headingFour"></span>
+                        <input type="text" id="fieldFour">
+                    </div>
+                    <div>
+                        <span id="headingFive"></span>
+                        <input type="text" id="fieldFive">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" id="Submit">
+                    </div>
+                </form>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <table class="list" id="tableList">
+                <thead>
+                    <tr>
+                        <th>
+                            <span id="ListHeadingOne"></span>
+                        </th>
+                        <th>
+                            <span id="ListHeadingTwo"></span>
+                        </th>
+                        <th>
+                            <span id="ListHeadingThree"></span>
+                        </th>
+                        <th>
+                            <span id="ListHeadingFour"></span>
+                        </th>
+                        <th>
+                            <span id="ListHeadingFive"></span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
